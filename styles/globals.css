@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* globals.css - 全局样式表，定义主题色调和赛博风格 */
+
+/* 定义全局的色调和主题色 */
+:root {
+    --background-color: #000000;
+    /* 黑色为底色 */
+    --primary-text-color: #bbfbb0;
+    /* 淡绿色，用于主要文本 */
+    --secondary-text-color: #ffffff;
+    /* 白色，用于次要文本 */
+    --accent-color: #33ff99;
+    /* 赛博风格的绿色，用于按钮、链接等突出部分 */
+    --border-color: #00ffcc;
+    /* 边框颜色，增加数字感 */
+    --glow-color: rgba(52, 255, 204, 0.5);
+    /* 霓虹灯光效果 */
+}
+
+/* 全局样式重置，确保不同浏览器的一致性 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 全局背景颜色和默认字体 */
+body {
+    background-color: var(--background-color);
+    color: var(--primary-text-color);
+    font-family: 'Roboto', sans-serif;
+    /* 默认字体 */
+    line-height: 1.6;
+}
+
+/* 大标题字体，具有数字感的效果 */
+h1,
+h2,
+h3 {
+    font-family: 'Orbitron', sans-serif;
+    /* 赛博风格字体，增强未来感 */
+    color: var(--secondary-text-color);
+}
+
+/* 链接样式，带有霓虹灯光效果 */
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--secondary-text-color);
+    text-shadow: 0 0 5px var(--glow-color);
+}
+
+/* 按钮样式，带有赛博风格的边框和霓虹效果 */
+button {
+    background: transparent;
+    color: var(--primary-text-color);
+    border: 2px solid var(--border-color);
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: 'Orbitron', sans-serif;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background: var(--accent-color);
+    box-shadow: 0 0 10px var(--glow-color);
+}
+
+/* 输入框样式，带有轻微霓虹边框 */
+input,
+textarea {
+    background: #111111;
+    color: var(--primary-text-color);
+    border: 1px solid var(--border-color);
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 5px var(--glow-color);
+}
+
+/* 卡片组件，具有霓虹边框效果 */
+.card {
+    background: #111111;
+    border: 1px solid var(--border-color);
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 0 15px rgba(0, 255, 204, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px rgba(0, 255, 204, 0.5);
+}
+
+/* 全局滚动条样式，增加赛博感觉 */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--border-color);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-color);
+}
