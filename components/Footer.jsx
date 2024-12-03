@@ -1,6 +1,7 @@
+"use client";
+
 import Image from 'next/image';
 import footerImage from '../public/footer.jpg'; // 确保路径正确
-import wechatQrCode from '../public/wechat_qr.jpg'; // 确保二维码图片路径正确
 
 const Footer = () => {
     return (
@@ -8,8 +9,15 @@ const Footer = () => {
             <div className="text-center md:text-left">
                 <h2 className="text-accent-color text-2xl font-bold mb-6">CONNECT WITH ME</h2>
                 <div className="flex flex-col md:flex-row md:items-center">
-                    <div className="md:mr-8 mb-6 md:mb-0">
-                        <Image src={footerImage} alt="Footer Image" width={150} height={150} className="rounded-lg filter drop-shadow-lg" />
+                    <div className="flex flex-col md:flex-row items-center md:items-start md:mr-8 mb-6 md:mb-0">
+                        <Image
+                            src={footerImage}
+                            alt="Footer Image"
+                            width={180}
+                            height={180}
+                            className="rounded-lg filter drop-shadow-lg w-auto min-w-[150px] object-contain"
+                        />
+
                     </div>
                     <div>
                         <div className="flex space-x-6 mb-4">
@@ -25,12 +33,9 @@ const Footer = () => {
                             <a href="https://github.com/Miles-Li-0828" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                                 <i className="fab fa-github text-3xl hover:text-accent-color transition"></i>
                             </a>
-                            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="WeChat" onClick={(e) => {
-                                e.preventDefault();
-                                window.open('/wechat', '_blank');
-                            }}>
-                                <i className="fab fa-weixin text-3xl hover:text-accent-color transition"></i>
-                            </a>
+                            <button onClick={() => window.open('/wechat', '_blank')} aria-label="WeChat" className="focus:outline-none">
+                                <Image src="/wechat-black.svg" alt="WeChat" width={40} height={40} className="hover:text-accent-color transition" />
+                            </button>
                         </div>
                         <p className="text-lg">
                             No matter where you come from, whether you're a tech geek, a coffee addict, or just someone with a great meme collection—I'm always up for making a new friend. Let's connect and share some laughs!
