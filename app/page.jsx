@@ -14,7 +14,7 @@ const Home = () => {
                 <div className="flex flex-col md:flex-row md:space-x-8 items-center md:items-start">
                     {/* 左侧内容：标题和介绍 */}
                     <div className="w-full md:w-1/2 mb-8 md:mb-0">
-                        <h1 className="text-4xl font-bold mb-4">Your Title Here</h1>
+                        <h1 className="text-4xl font-bold mb-4 font-bebas">Your Title Here</h1>
                         <p className="mb-4">
                             Paragraph 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.
                         </p>

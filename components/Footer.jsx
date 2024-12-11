@@ -1,7 +1,8 @@
 "use client";
 
 import Image from 'next/image';
-import footerImage from '../public/footer.jpg'; // 确保路径正确
+import footerImage from '../public/footer.png'; // 确保路径正确
+import '../styles/globals.css';
 
 const Footer = () => {
     return (
@@ -21,20 +22,20 @@ const Footer = () => {
                     </div>
                     <div>
                         <div className="flex space-x-6 mb-4">
-                            <a href="https://www.instagram.com/milesli828/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                                <i className="fab fa-instagram text-3xl hover:text-accent-color transition"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/in/yueming-miles-li/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                                <i className="fab fa-linkedin text-3xl hover:text-accent-color transition"></i>
-                            </a>
-                            <a href="https://www.facebook.com/profile.php?id=100077644104889" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-                                <i className="fab fa-facebook text-3xl hover:text-accent-color transition"></i>
-                            </a>
-                            <a href="https://github.com/Miles-Li-0828" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                                <i className="fab fa-github text-3xl hover:text-accent-color transition"></i>
-                            </a>
+                            <button onClick={() => window.open('https://www.linkedin.com/in/yueming-miles-li/', '_blank')} aria-label="WeChat" className="focus:outline-none">
+                                <Image src="/icons/LinkedInIcon.png" alt="LinkedIn" width={40} height={40} className="hover:text-accent-color transition" />
+                            </button>
+                            <button onClick={() => window.open('https://www.instagram.com/milesli828/', '_blank')} aria-label="WeChat" className="focus:outline-none">
+                                <Image src="/icons/insIcon.png" alt="instagram" width={40} height={40} className="hover:text-accent-color transition" />
+                            </button>
+                            <button onClick={() => window.open('https://www.facebook.com/profile.php?id=100077644104889', '_blank')} aria-label="WeChat" className="focus:outline-none">
+                                <Image src="/icons/facebookIcon.png" alt="facebook" width={40} height={40} className="hover:text-accent-color transition" />
+                            </button>
+                            <button onClick={() => window.open('https://github.com/Miles-Li-0828', '_blank')} aria-label="WeChat" className="focus:outline-none">
+                                <Image src="/icons/githubIcon.png" alt="github" width={40} height={40} className="hover:text-accent-color transition" />
+                            </button>
                             <button onClick={() => window.open('/wechat', '_blank')} aria-label="WeChat" className="focus:outline-none">
-                                <Image src="/wechat-black.svg" alt="WeChat" width={40} height={40} className="hover:text-accent-color transition" />
+                                <Image src="/icons/WeChatIcon.png" alt="WeChat" width={40} height={40} className="hover:text-accent-color transition" />
                             </button>
                         </div>
                         <p className="text-lg">
