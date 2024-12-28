@@ -15,7 +15,7 @@ const Home = () => {
                 <div className="hidden md:flex flex-wrap md:flex-nowrap">
                     {/* 左侧内容：标题和介绍 */}
                     <div className="w-full md:w-2/3 lg:w-2/3 flex flex-col animate-fadeIn">
-                        <h1 className="text-5xl font-bold mb-4 ml-10">Welcome To Miles' Cyber World!</h1>
+                        <h1 className="text-5xl font-bold mb-4 ml-20">Welcome To Miles' Cyber World!</h1>
                         <p className="mb-4">
                             Hi, I’m Miles—yes, just like the Black Spider-Man, because I believe I can be a superhero in my own world, just like that picture over there! 🕷️ But unlike Spidey, I’m from China, the land of kung fu. No superpowers here, but I can definitely show you some moves! I hail from Kunming, Yunnan—a.k.a. Spring City—one of the most amazing places on Earth. Seriously, come visit, the weather is perfect, and the food will blow your mind.
                         </p>

@@ -15,7 +15,7 @@
     /* 淡绿色，用于主要文本 */
     --secondary-text-color: #ffffff;
     /* 白色，用于次要文本 */
-    --accent-color: #33ff99;
+    --accent-color: rgb(227, 204, 244);
     /* 赛博风格的绿色，用于按钮、链接等突出部分 */
     --glow-color: rgba(52, 255, 204, 0.5);
     /* 霓虹灯光效果 */
