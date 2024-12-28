@@ -39,7 +39,7 @@ const Footer = () => {
                             </button>
                         </div>
                         <p className="text-lg">
-                            No matter where you come from, whether you're a tech geek, a coffee addict, or just someone with a great meme collection—I'm always up for making a new friend. Let's connect and share some laughs!
+                            No matter where you come from, whether you're a tech geek, a coffee addict, or just someone with a great meme collection—I'm always up for making a new friend. Let's connect and share some laughs! ☕️☕️
                         </p>
                     </div>
                 </div>

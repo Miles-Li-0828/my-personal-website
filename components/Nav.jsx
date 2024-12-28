@@ -10,26 +10,26 @@ const Nav = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <nav className="font-bebas-neue bg-black text-primary-text-color p-4 flex items-center justify-between">
+        <nav className="bg-black text-primary-text-color p-4 flex items-center justify-between">
             <div className="flex items-center">
                 <Link href="/">
                     <Image src={portrait} alt="Miles Li" width={50} height={50} className="rounded-full" />
                 </Link>
-                <Link href="/" className="ml-4 text-white text-xl font-bold font-bebas-neue">
+                <Link href="/" className="ml-4 text-white text-xl font-bold">
                     MILES LI
                 </Link>
             </div>
             <div className="hidden md:flex space-x-8">
-                <Link href="/about" className="hover:text-accent-color transition bebas-neue-regular">
+                <Link href="/about" className="navbar-button font-silkscreen hover:text-accent-color transition">
                     ABOUT ME
                 </Link>
-                <Link href="/projects" className="hover:text-accent-color transition bebas-neue-regular">
+                <Link href="/projects" className="navbar-button font-silkscreen hover:text-accent-color transition">
                     PROJECTS
                 </Link>
-                <Link href="/funFact" className="hover:text-accent-color transition bebas-neue-regular">
+                <Link href="/funFact" className="navbar-button font-silkscreen hover:text-accent-color transition">
                     FUN FACTS
                 </Link>
-                <Link href="/contact" className="hover:text-accent-color transition bebas-neue-regular">
+                <Link href="/contact" className="navbar-button font-silkscreen hover:text-accent-color transition">
                     CONTACT ME
                 </Link>
             </div>
@@ -56,16 +56,16 @@ const Nav = () => {
             </div>
             {isOpen && (
                 <div className="md:hidden absolute top-16 right-0 w-full bg-black text-center py-4">
-                    <Link href="/about" className="block py-2 hover:text-accent-color transition">
+                    <Link href="/about" className="font-silkscreen block py-2 hover:text-accent-color transition">
                         ABOUT ME
                     </Link>
-                    <Link href="/projects" className="block py-2 hover:text-accent-color transition">
+                    <Link href="/projects" className="font-silkscreen block py-2 hover:text-accent-color transition">
                         PROJECTS
                     </Link>
-                    <Link href="/funFact" className="block py-2 hover:text-accent-color transition">
+                    <Link href="/funFact" className="font-silkscreen block py-2 hover:text-accent-color transition">
                         FUN FACTS
                     </Link>
-                    <Link href="/contact" className="block py-2 hover:text-accent-color transition">
+                    <Link href="/contact" className="font-silkscreen block py-2 hover:text-accent-color transition">
                         CONTACT ME
                     </Link>
                 </div>

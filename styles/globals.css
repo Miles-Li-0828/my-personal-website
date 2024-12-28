@@ -8,7 +8,7 @@
 
 /* 定义全局的色调和主题色 */
 :root {
-    --font-bebas-neue: "Bebas Neue", sans-serif;
+    /* 使用 Silkscreen 字体 */
     --background-color: #000000;
     /* 黑色为底色 */
     --primary-text-color: #bbfbb0;
@@ -29,33 +29,35 @@
 }
 
 /* 全局背景颜色和默认字体 */
-body {
-    font-family: var(--font-bebas-neue);
+body,
+p,
+span,
+div {
+    font-family: var(--font-body), sans-serif;
     background-color: var(--background-color);
     color: var(--primary-text-color);
     line-height: 1.6;
 }
 
-.bebas-neue-regular {
-    font-family: "Bebas Neue", sans-serif !important;
-    font-weight: 400;
-    font-style: normal;
+body {
+    font-size: 1.2rem;
 }
+
 
 /* Apply Bebas Neue to all headings */
 h1,
 h2,
 h3,
 h4 {
-    font-family: 'Bebas Neue', sans-serif;
-    font-weight: 400;
+    font-family: var(--font-title), sans-serif;
+    font-weight: 100;
     font-style: normal;
     color: var(--secondary-text-color);
     /* Apply consistent heading color */
 }
 
 Link {
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: var(--font-title), sans-serif;
     font-weight: 400;
     font-style: normal;
     color: var(--secondary-text-color);
@@ -63,7 +65,7 @@ Link {
 
 /* 链接样式，带有霓虹灯光效果 */
 a {
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: var(--font-body), sans-serif;
     font-weight: 400;
     font-style: normal;
     color: var(--accent-color);
@@ -140,4 +142,15 @@ textarea:focus {
 
 code {
     font-family: var(--font-bebas-neue), monospace;
+}
+
+/* 定义 Silkscreen 字体 */
+.font-silkscreen {
+    font-family: var(--font-silkscreen-Regular), sans-serif;
+    font-weight: 400;
+}
+
+/* nav bar 上的Button字体大小 */
+.navbar-button {
+    font-size: 1.4rem;
 }

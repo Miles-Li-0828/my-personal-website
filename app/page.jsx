@@ -11,23 +11,45 @@ const Home = () => {
 
             {/* 内容区域 */}
             <main className="flex-grow container mx-auto px-4 py-8">
-                <div className="flex flex-col md:flex-row md:space-x-8 items-center md:items-start">
+                {/* 宽屏布局 */}
+                <div className="hidden md:flex flex-wrap md:flex-nowrap">
                     {/* 左侧内容：标题和介绍 */}
-                    <div className="w-full md:w-1/2 mb-8 md:mb-0">
-                        <h1 className="text-4xl font-bold mb-4 font-bebas">Your Title Here</h1>
+                    <div className="w-full md:w-2/3 lg:w-2/3 flex flex-col animate-fadeIn">
+                        <h1 className="text-5xl font-bold mb-4">Welcome To Miles' Cyber World!</h1>
                         <p className="mb-4">
-                            Paragraph 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.
+                            Hi, I’m Miles—yes, just like the Black Spider-Man, because I believe I can be a superhero in my own world, just like that picture over there! 🕷️ But unlike Spidey, I’m from China, the land of kung fu. No superpowers here, but I can definitely show you some moves! I hail from Kunming, Yunnan—a.k.a. Spring City—one of the most amazing places on Earth. Seriously, come visit, the weather is perfect, and the food will blow your mind.
                         </p>
                         <p className="mb-4">
-                            Paragraph 2: Cras vel velit auctor, pharetra erat vitae, accumsan sem. Integer vehicula massa nec libero ullamcorper, sit amet tristique tortor aliquam.
+                            By day, I’m a software engineer, and by night, a cyber-security enthusiast (okay, sometimes I’m just eating snacks and watching Netflix). My goal? To build cyber metropolises and protect everyone living in them. Coding feels like playing with cyber LEGO—I get this crazy sense of accomplishment every time I complete a project. As for cybersecurity, it’s like being the friendly neighborhood tech Spider-Man, patching holes in massive firewalls instead of chasing villains. Who needs a web-shooter when you’ve got a debugger?
                         </p>
                         <p>
-                            Paragraph 3: Duis feugiat turpis ac ex fermentum, in ullamcorper odio dictum. Nulla facilisi.
+                            Oh, I almost forgot to mention—I’m an ENFJ! I absolutely love meeting new people and making friends. If you’re interested in me (or just want to chat about kung fu, coding, or cybersecurity), you’re super-duper welcome to connect with me. Don’t worry, I don’t bite…unless you’re a cybersecurity threat. 😉
                         </p>
                     </div>
 
                     {/* 右侧内容：图片 */}
-                    <div className="w-full md:w-1/2 flex justify-center md:justify-end">
+                    <div className="w-full md:w-1/2 flex justify-center items-start animate-slideIn">
+                        <Image
+                            src={cyberSoldier}
+                            alt="Cyber Soldier"
+                            width={500} // 调整为更大的宽度
+                            height={500}
+                            left-margin={200} // 添加左边距
+                            className="rounded-lg filter drop-shadow-lg max-w-full h-auto"
+                        />
+                    </div>
+                </div>
+
+                {/* 窄屏布局 */}
+                <div className="flex md:hidden flex-col animate-fadeIn">
+                    {/* 第一段文字 */}
+                    <h1 className="text-4xl font-bold mb-4 text-center">Welcome To Miles' Cyber World!</h1>
+                    <p className="mb-4 text-center">
+                        Hi, I’m Miles—yes, just like the Black Spider-Man, because I believe I can be a superhero in my own world, just like that picture over there! 🕷️ But unlike Spidey, I’m from China, the land of kung fu. No superpowers here, but I can definitely show you some moves! I hail from Kunming, Yunnan—a.k.a. Spring City—one of the most amazing places on Earth. Seriously, come visit, the weather is perfect, and the food will blow your mind.
+                    </p>
+
+                    {/* 图片插入 */}
+                    <div className="w-full flex justify-center mb-4">
                         <Image
                             src={cyberSoldier}
                             alt="Cyber Soldier"
@@ -36,6 +58,14 @@ const Home = () => {
                             className="rounded-lg filter drop-shadow-lg max-w-full h-auto"
                         />
                     </div>
+
+                    {/* 其他段落 */}
+                    <p className="mb-4">
+                        By day, I’m a software engineer, and by night, a cyber-security enthusiast (okay, sometimes I’m just eating snacks and watching Netflix). My goal? To build cyber metropolises and protect everyone living in them. Coding feels like playing with cyber LEGO—I get this crazy sense of accomplishment every time I complete a project. As for cybersecurity, it’s like being the friendly neighborhood tech Spider-Man, patching holes in massive firewalls instead of chasing villains. Who needs a web-shooter when you’ve got a debugger?
+                    </p>
+                    <p>
+                        Oh, I almost forgot to mention—I’m an ENFJ! I absolutely love meeting new people and making friends. If you’re interested in me (or just want to chat about kung fu, coding, or cybersecurity), you’re super-duper welcome to connect with me. Don’t worry, I don’t bite…unless you’re a cybersecurity threat. 😉
+                    </p>
                 </div>
             </main>
 
