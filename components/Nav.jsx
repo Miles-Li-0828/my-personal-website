@@ -26,8 +26,8 @@ const Nav = () => {
                 <Link href="/projects" className="navbar-button font-silkscreen hover:text-accent-color transition">
                     PROJECTS
                 </Link>
-                <Link href="/funFact" className="navbar-button font-silkscreen hover:text-accent-color transition">
-                    FUN FACTS
+                <Link href="/blog" className="navbar-button font-silkscreen hover:text-accent-color transition">
+                    BLOG
                 </Link>
                 <Link href="/contact" className="navbar-button font-silkscreen hover:text-accent-color transition">
                     CONTACT ME
