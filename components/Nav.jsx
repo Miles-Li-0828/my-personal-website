@@ -20,7 +20,7 @@ const Nav = () => {
                 </Link>
             </div>
             <div className="hidden md:flex space-x-8">
-                <Link href="/about" className="navbar-button font-silkscreen hover:text-accent-color transition">
+                <Link href="/aboutme" className="navbar-button font-silkscreen hover:text-accent-color transition">
                     ABOUT ME
                 </Link>
                 <Link href="/projects" className="navbar-button font-silkscreen hover:text-accent-color transition">
