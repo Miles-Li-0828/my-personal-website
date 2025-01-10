@@ -26,8 +26,8 @@ const Nav = () => {
                 <Link href="/projects" className="navbar-button font-silkscreen hover:text-accent-color transition">
                     PROJECTS
                 </Link>
-                <Link href="/blog" className="navbar-button font-silkscreen hover:text-accent-color transition">
-                    BLOG
+                <Link href="/blogs" className="navbar-button font-silkscreen hover:text-accent-color transition">
+                    BLOGS
                 </Link>
                 <Link href="/contact" className="navbar-button font-silkscreen hover:text-accent-color transition">
                     CONTACT ME
@@ -62,8 +62,8 @@ const Nav = () => {
                     <Link href="/projects" className="font-silkscreen block py-2 hover:text-accent-color transition">
                         PROJECTS
                     </Link>
-                    <Link href="/funFact" className="font-silkscreen block py-2 hover:text-accent-color transition">
-                        FUN FACTS
+                    <Link href="/blogs" className="font-silkscreen block py-2 hover:text-accent-color transition">
+                        BLOGS
                     </Link>
                     <Link href="/contact" className="font-silkscreen block py-2 hover:text-accent-color transition">
                         CONTACT ME

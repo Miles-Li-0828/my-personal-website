@@ -57,7 +57,8 @@ const ContactPage = () => {
                 <Nav />
             </header>
             <main className="flex-grow container mx-auto px-4 py-8">
-                <h1 className="text-center text-3xl font-bold mb-8">Contact Me (´･ω･`)</h1>
+                <h1 className="text-center text-3xl font-bold mb-8">Contact Super Miles 📧</h1>
+                <p className="text-center text-lg mb-8">Have questions, comments, or just want to tell me I’m awesome? Drop me a message below—I promise to read it (eventually)! 😊</p>
                 <form onSubmit={handleSubmit} className="max-w-lg mx-auto bg-white p-6 rounded-lg shadow-md">
                     <div className="mb-4">
                         <label className="block text-sm font-medium text-gray-700 bg-slate-300">Name *</label>
