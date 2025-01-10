@@ -1,14 +1,14 @@
-import dotenv from "dotenv"; // 替换 require("dotenv")
-import express from "express";
-import nodemailer from "nodemailer";
-import bodyParser from "body-parser";
-import cors from "cors";
+const dotenv = require("dotenv");
+const express = require("express");
+const nodemailer = require("nodemailer");
+const bodyParser = require("body-parser");
+const cors = require("cors");
 
 // 加载 .env 文件中的变量
 dotenv.config();
 
 const app = express();
-const PORT = 5000;
+const PORT = 8000;
 
 // Middleware
 app.use(bodyParser.json());
