@@ -60,34 +60,34 @@ const ContactPage = () => {
                 <h1 className="text-center text-3xl font-bold mb-8">Contact Me (´･ω･`)</h1>
                 <form onSubmit={handleSubmit} className="max-w-lg mx-auto bg-white p-6 rounded-lg shadow-md">
                     <div className="mb-4">
-                        <label className="block text-sm font-medium text-gray-700">Name *</label>
+                        <label className="block text-sm font-medium text-gray-700 bg-slate-300">Name *</label>
                         <input
                             type="text"
                             name="name"
                             value={formData.name}
                             onChange={handleChange}
-                            className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-blue-200"
+                            className="w-full px-3 py-2 border border-gray-300 text-black focus:outline-none focus:ring focus:ring-blue-200 bg-slate-100"
                             required
                         />
                     </div>
                     <div className="mb-4">
-                        <label className="block text-sm font-medium text-gray-700">Email Address *</label>
+                        <label className="block text-sm font-medium text-gray-700 bg-slate-300">Email Address *</label>
                         <input
                             type="email"
                             name="email"
                             value={formData.email}
                             onChange={handleChange}
-                            className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-blue-200"
+                            className="w-full px-3 py-2 border border-gray-300 text-black focus:outline-none focus:ring focus:ring-blue-200 bg-slate-100"
                             required
                         />
                     </div>
                     <div className="mb-4">
-                        <label className="block text-sm font-medium text-gray-700">Message *</label>
+                        <label className="block text-sm font-medium text-gray-700 bg-slate-300">Message *</label>
                         <textarea
                             name="message"
                             value={formData.message}
                             onChange={handleChange}
-                            className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-blue-200"
+                            className="w-full px-3 py-2 border border-gray-300 text-black focus:outline-none focus:ring focus:ring-blue-200 bg-slate-100"
                             rows="5"
                             required
                         ></textarea>
