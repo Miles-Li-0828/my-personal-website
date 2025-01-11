@@ -56,7 +56,7 @@ const Nav = () => {
             </div>
             {isOpen && (
                 <div className="md:hidden absolute top-16 right-0 w-full bg-black text-center py-4">
-                    <Link href="/about" className="font-silkscreen block py-2 hover:text-accent-color transition">
+                    <Link href="/aboutme" className="font-silkscreen block py-2 hover:text-accent-color transition">
                         ABOUT ME
                     </Link>
                     <Link href="/projects" className="font-silkscreen block py-2 hover:text-accent-color transition">
