@@ -9,8 +9,8 @@ const BlogsPage = () => {
     const [searchQuery, setSearchQuery] = useState("");
 
     const blogs = [
-        { id: "1", title: "Blog Title 1", description: "Description 1", date: "2025-01-10", image: "/blog/1.jpg" },
-        { id: "2", title: "Blog Title 2", description: "Description 2", date: "2025-01-09", image: "/blog/1.jpg" },
+        { id: "1", title: "The Battle Within: Grappling with a Life-Changing Choice", description: "Description 1", date: "2025-01-10", image: "/blog/1.jpg" },
+
         // Add more blogs here
     ];
 
