@@ -32,18 +32,19 @@ const ContactPage = () => {
         }
 
         try {
-            const response = await fetch("/api/send", {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify(formData),
-            });
-            /** 
+            /**
             const response = await fetch("http://localhost:8000/send", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(formData),
             });
             */
+            const response = await fetch("/api/send", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(formData),
+            });
+
 
             const result = await response.json();
 
@@ -64,7 +65,7 @@ const ContactPage = () => {
                 <Nav />
             </header>
             <main className="flex-grow container mx-auto px-4 py-8">
-                <h1 className="text-center text-3xl font-bold mb-8">Contact Super Miles 📧</h1>
+                <h1 className="text-center text-3xl font-bold mb-8">Contact Super Miles</h1>
                 <p className="text-center text-lg mb-8">Have questions, comments, or just want to tell me I’m awesome? Drop me a message below—I promise to read it (eventually)! 😊</p>
                 <form onSubmit={handleSubmit} className="max-w-lg mx-auto bg-white p-6 rounded-lg shadow-md">
                     <div className="mb-4">
